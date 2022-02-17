@@ -57,6 +57,7 @@ class CategoryPageViewController: UIViewController {
         pageFrame = view.frame
         calculatePageContent()
         updateViewControllersFrame()
+        adjustContentOffset()
     }
     
     // MARK: - Public
@@ -87,6 +88,10 @@ class CategoryPageViewController: UIViewController {
         
         scrollView.contentSize = CGSize(width: scrollView.frame.size.width * CGFloat(childs),
                                         height: scrollView.frame.size.height)
+    }
+    
+    private func adjustContentOffset() {
+        scrollTo(index: selectedIndex, animation: false)
     }
     
     // MARK: - viewcontroller
