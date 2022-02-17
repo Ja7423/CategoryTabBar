@@ -23,11 +23,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         testData = demoData()
         
-//        demo1()
-//        pageDemo()
+        demo1()
+        pageDemo()
         
-        demo4()
-        pageDemo2()
+//        demo4()
+//        pageDemo2()
         
         tabBar?.coordinatingScrollView = pageController?.scrollView
         
