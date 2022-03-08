@@ -167,7 +167,7 @@ class CategoryTabBar: UIView {
         }
     }
     
-    public var indicatorColor: UIColor = .black {
+    public var indicatorColor: UIColor = .white {
         didSet {
             updateIndicatorAppearance()
         }
@@ -274,6 +274,7 @@ class CategoryTabBar: UIView {
         tabBarScrollView.addSubview(indicator)
         indicator.frame = CGRect(x: 0, y: 0, width: 0, height: indicatorHeight)
         indicator.isHidden = true
+        updateIndicatorAppearance()
     }
     
     // MARK: Item

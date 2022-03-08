@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         testData = demoData()
-        
+        view.backgroundColor = .black
         demo1()
         pageDemo()
         
@@ -94,7 +94,7 @@ class ViewController: UIViewController {
         let titles = testData.map({ $0.title })
         let tabBar = CategoryTabBar(frame: CGRect(x: 0, y: 150, width: 250, height: 60))
         tabBar.delegate = self
-        tabBar.indicatorColor = .systemYellow
+//        tabBar.indicatorColor = .systemYellow
         tabBar.itemSelectedTextColor = .systemIndigo
         tabBar.defaultIndex = 6
         tabBar.barContentInset = UIEdgeInsets(top: 5, left: 20, bottom: 5, right: 10)
